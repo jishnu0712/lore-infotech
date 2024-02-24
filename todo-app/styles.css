@@ -19,3 +19,9 @@ body {
   border: 2px solid #333;
   padding: 4px 8px;
 }
+
+.todo {
+  margin: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 6px 16px;
+}
