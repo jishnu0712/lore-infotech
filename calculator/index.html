@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="d-flex-center">
+      <h1>Calculator</h1>
+    </nav>
+
+    <main class="d-flex-center">
+      <div class="container">
+        <h2 id="result"></h2>
+        <input type="number" id="num1" />
+        <input type="number" id="num2" />
+        <div class="btn-container d-flex-center">
+          <button id="add">Addition</button>
+          <button id="sub">Substraction</button>
+          <button id="mul">Multiplication</button>
+          <button id="div">Division</button>
+        </div>
+      </div>
+    </main>
+
+    <script defer>
+      const res1 = document.getElementById("result");
+
+      const addBtn = document.getElementById("add");
+      const subBtn = document.getElementById("sub");
+      const mulBtn = document.getElementById("mul");
+      const divBtn = document.getElementById("div");
+
+      let result;
+      // add
+      addBtn.addEventListener("click", (event) => {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+
+        result = parseInt(num1) + parseInt(num2);
+        res1.innerText = result;
+      });
+
+      //sub
+      subBtn.addEventListener("click", function (event) {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+
+        result = parseInt(num1) - parseInt(num2);
+        res1.innerText = result;
+      });
+
+      // mul
+      mulBtn.addEventListener("click", (event) => {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+
+        result = parseInt(num1) * parseInt(num2);
+        res1.innerText = result;
+      });
+
+      // div
+      divBtn.addEventListener("click", (event) => {
+        const num1 = document.getElementById("num1").value;
+        const num2 = document.getElementById("num2").value;
+
+        result = parseInt(num1) / parseInt(num2);
+        res1.innerText = result;
+      });
+    </script>
+  </body>
+</html>

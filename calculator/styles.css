@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  background-color: #172b47;
+  color: white;
+  height: 50px;
+  padding: 0 12px;
+  justify-content: start !important;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 4px 8px;
+}
+
+button {
+  background-color: #1e539c;
+  padding: 4px 8px;
+  color: aliceblue;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #05285b;
+}
+
+.btn-container {
+  margin: 8px 0;
+  justify-content: space-between !important;
+}
